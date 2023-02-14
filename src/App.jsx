@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import ToDoLists from './ToDoLists';
 
-
-
+import AddIcon from '@mui/icons-material/Add';
+import { Button } from '@material-ui/core';
 
 const App = () => {
   const [inputList, setInputList] = useState("");
@@ -44,7 +44,14 @@ const App = () => {
             placeholder='Add Items'
             onChange={itemEvent}
             value={inputList} />
-          <button onClick={listOfItems}>+</button>
+          <Button 
+          style = {{ backgroundColor:'green', 
+                      color:'white',
+                      borderRadius:'50px',
+                      marginLeft:'5px',
+                      height:'10px'}} className = "new_btn" onClick={listOfItems}>
+            <AddIcon/>
+          </Button>
 
           <ol>
             {items.map((itemval, index) => {

@@ -80,6 +80,8 @@ ol li{
   flex-direction: row;
   justify-content: left;
   align-items: center;
+  margin-left:20px;
+  margin-left: 10px;
 }
 .todo_style .fa-times{
   width: 20px;
@@ -96,4 +98,13 @@ ol li{
 }
 .fa-times:hover{
   background-color: crimson;
+}
+
+new_btn{
+  color: green;
+  background-color: red;
+}
+
+DeleteOutlineIcon{
+  color: blue;
 }
